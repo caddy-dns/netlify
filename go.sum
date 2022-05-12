@@ -39,6 +39,10 @@ github.com/CL0Pinette/libdns-netlify v0.0.0-20220512140525-8eda782dd815 h1:tnhkQ
 github.com/CL0Pinette/libdns-netlify v0.0.0-20220512140525-8eda782dd815/go.mod h1:MotYYY29KhARmAKx3+eb/F0GeSYEP22j4REGAmIHcEA=
 github.com/CL0Pinette/libdns-netlify v0.0.0-20220512192455-49847aeb98b5 h1:Yytr2FHi+dAiYaV8Gfxyhsv01OPqrRcH21PTrwDtFZM=
 github.com/CL0Pinette/libdns-netlify v0.0.0-20220512192455-49847aeb98b5/go.mod h1:D8jbBkNOZyGFDOMU/LrSu0EWFy/c/LH/eYFBHm0NWVk=
+github.com/CL0Pinette/libdns-netlify v0.0.0-20220512200820-bbba85a10369 h1:Pcw9K05+CukqlU4xBODqcXZWYPYvjqa9vpMYBzRMGzc=
+github.com/CL0Pinette/libdns-netlify v0.0.0-20220512200820-bbba85a10369/go.mod h1:D8jbBkNOZyGFDOMU/LrSu0EWFy/c/LH/eYFBHm0NWVk=
+github.com/CL0Pinette/libdns-netlify v0.0.0-20220512203758-12c86a69659e h1:FFZPNDYxVXzwXvAtmUWK1zn7KB+EtbT58NiQocn1HLI=
+github.com/CL0Pinette/libdns-netlify v0.0.0-20220512203758-12c86a69659e/go.mod h1:D8jbBkNOZyGFDOMU/LrSu0EWFy/c/LH/eYFBHm0NWVk=
 github.com/DataDog/zstd v1.4.1/go.mod h1:1jcaCB/ufaK+sKp1NBhlGmpz41jOoPQ35bpF36t7BBo=
 github.com/GeertJohan/go.incremental v1.0.0/go.mod h1:6fAjUhbVuX1KcMD3c8TEgVUqmo4seqhv0i0kdATSkM0=
 github.com/GeertJohan/go.rice v1.0.0/go.mod h1:eH6gbSOAUv07dQuZVnBmoDP8mgsM1rtixis4Tib9if0=

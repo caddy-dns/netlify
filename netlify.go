@@ -30,7 +30,7 @@ func (p *Provider) Provision(ctx caddy.Context) error {
 
 // UnmarshalCaddyfile sets up the DNS provider from Caddyfile tokens. Syntax:
 //
-// cloudflare [<api_token>] {
+// netlify [<api_token>] {
 //     api_token <api_token>
 // }
 //
