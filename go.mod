@@ -1,6 +1,6 @@
 module github.com/CL0Pinette/caddy-dns_netlify
 
-go 1.16
+go 1.17
 
 require (
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
