@@ -1,4 +1,4 @@
-module github.com/CL0Pinette/caddy-dns-netlify
+module github.com/CL0Pinette/caddy-dns_netlify
 
 go 1.17
 
