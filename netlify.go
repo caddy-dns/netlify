@@ -1,7 +1,7 @@
 package netlify
 
 import (
-	netlify "github.com/CL0Pinette/libdns-netlify" v1.0.0
+	netlify "github.com/CL0Pinette/libdns-netlify"
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 )
