@@ -1,9 +1,9 @@
 package netlify
 
 import (
-	netlify "github.com/CL0Pinette/libdns-netlify"
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
+	netlify "github.com/libdns/netlify"
 )
 
 // Provider wraps the provider implementation as a Caddy module.
@@ -24,8 +24,7 @@ func (Provider) CaddyModule() caddy.ModuleInfo {
 // Before using the provider config, resolve placeholders in the API token.
 // Implements caddy.Provisioner.
 func (p *Provider) Provision(ctx caddy.Context) error {
-	p.Logger = ctx.Logger(p)
-	p.Provider.PersonnalAccessToken = caddy.NewReplacer().ReplaceAll(p.Provider.PersonnalAccessToken, "")
+	p.Provider.PersonalAccessToken = caddy.NewReplacer().ReplaceAll(p.Provider.PersonalAccessToken, "")
 	return nil
 }
 
@@ -37,18 +36,18 @@ func (p *Provider) Provision(ctx caddy.Context) error {
 func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	for d.Next() {
 		if d.NextArg() {
-			p.Provider.PersonnalAccessToken = d.Val()
+			p.Provider.PersonalAccessToken = d.Val()
 		}
 		if d.NextArg() {
 			return d.ArgErr()
 		}
 		for nesting := d.Nesting(); d.NextBlock(nesting); {
 			switch d.Val() {
-			case "api_token":
-				if p.Provider.PersonnalAccessToken != "" {
+			case "personal_access_token":
+				if p.Provider.PersonalAccessToken != "" {
 					return d.Err("API token already set")
 				}
-				p.Provider.PersonnalAccessToken = d.Val()
+				p.Provider.PersonalAccessToken = d.Val()
 				if d.NextArg() {
 					return d.ArgErr()
 				}
@@ -57,7 +56,7 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 			}
 		}
 	}
-	if p.Provider.PersonnalAccessToken == "" {
+	if p.Provider.PersonalAccessToken == "" {
 		return d.Err("missing API token")
 	}
 	return nil
