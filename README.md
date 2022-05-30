@@ -20,7 +20,7 @@ To use this module for the ACME DNS challenge, [configure the ACME issuer in you
 		"dns": {
 			"provider": {
 				"name": "netlify",
-				"api_token": "YOUR_PERSONNAL_ACCESS_TOKEN"
+				"personal_access_token": "YOUR_PERSONNAL_ACCESS_TOKEN"
 			}
 		}
 	}
