@@ -1,8 +1,6 @@
-module github.com/CL0Pinette/caddy-dns-netlify
+module github.com/caddy-dns/netlify
 
 go 1.17
-
-retract v1.0.1
 
 require github.com/caddyserver/caddy/v2 v2.4.0
 

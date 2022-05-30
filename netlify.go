@@ -3,7 +3,7 @@ package netlify
 import (
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	netlify "github.com/libdns/netlify"
+	"github.com/libdns/netlify"
 )
 
 // Provider wraps the provider implementation as a Caddy module.
