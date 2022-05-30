@@ -6,7 +6,7 @@ retract v1.0.1
 
 require github.com/caddyserver/caddy/v2 v2.4.0
 
-require github.com/libdns/netlify v0.0.0-20220529204049-9bab94bfeeaa
+require github.com/libdns/netlify v0.0.0-20220529214329-14e5222b418a
 
 require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
